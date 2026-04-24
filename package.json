@@ -2,7 +2,6 @@
   "name": "clickhousemcp",
   "version": "0.0.0",
   "type": "module",
-  "private": true,
   "scripts": {
     "build": "bun build src/index.ts --outdir dist --target node",
     "start": "bun run src/index.ts"
