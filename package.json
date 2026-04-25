@@ -1,22 +1,27 @@
 {
-  "name": "clickhousemcp",
+  "name": "clickhouse-mcp-vault",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "build": "bun build src/index.ts --outdir dist --target node",
-    "start": "bun run src/index.ts"
+    "start": "bun run src/index.ts",
+    "container": "docker run --rm -it -v $(realpath .):/app node:latest /bin/bash"
   },
   "bin": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kruceo/Clickhouse-MCP"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
-  },
-  "dependencies": {
+    "typescript": "^5",
     "@clack/prompts": "^1.2.0",
     "@clickhouse/client": "^1.18.2",
     "@modelcontextprotocol/sdk": "^1.29.0",
     "zod": "^4.3.6"
-  }
+  },
+  
+  "dependencies": {}
 }

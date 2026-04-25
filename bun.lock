@@ -3,17 +3,15 @@
   "workspaces": {
     "": {
       "name": "clickhousemcp",
-      "dependencies": {
-        "@clack/prompts": "^1.2.0",
-        "@clickhouse/client": "^1.18.2",
-        "@modelcontextprotocol/sdk": "^1.29.0",
-        "zod": "^4.3.6",
-      },
       "devDependencies": {
         "@types/bun": "latest",
       },
       "peerDependencies": {
+        "@clack/prompts": "^1.2.0",
+        "@clickhouse/client": "^1.18.2",
+        "@modelcontextprotocol/sdk": "^1.29.0",
         "typescript": "^5",
+        "zod": "^4.3.6",
       },
     },
   },

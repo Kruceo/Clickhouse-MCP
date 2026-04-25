@@ -1,0 +1,23 @@
+{
+  "keys": {
+    "patch": [
+      "fix",
+      "style",
+      "refactor",
+      "improvement"
+    ],
+    "minor": [
+      "feat",
+      "feature"
+    ],
+    "major": [
+      "breaking",
+      "release",
+      "new"
+    ]
+  },
+  "commands": {
+    "before": [],
+    "after": []
+  }
+}

@@ -1,14 +1,35 @@
-# Clickhouse MCP
+# Clickhouse MCP Vault Vault
 
 ## First Steps 
 
 You will need to register your Clickhouse Database, we need this to not pass any credential to the AI Agent, just a generic ID.
 
 ```bash
-bunx kruceo/clickhouse-mcp register
+bunx clickhouse-mcp-vault register
 ```
 
 It will return a UUID. Remember this.
+
+## Opencode example
+
+```json
+// .config/opencode/opencode.jsonc
+{
+  "$schema": "https://opencode.ai/config.json",
+  "disabled_providers": [],
+  "mcp": {
+    "clickhouse-atplus": {
+      "type": "local",
+      "command": ["bunx", "clickhouse-mcp-vault"],
+      "enabled": true,
+      "environment": {
+        "DB_ID": "c73c1049-977c-475f-8c00-4fad53ab119c",
+      },
+    },
+  },
+  "provider": {}
+}
+```
 
 ## Kilo Code example
 
@@ -21,7 +42,7 @@ It will return a UUID. Remember this.
       "type": "local",
       "command": [
         "bunx",
-        "kruceo/clickhouse-mcp"
+        "click-mcp"
       ],
       "environment": {
         "ALLOW_WRITE": true,

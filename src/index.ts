@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { register, list, deleteCmd, help } from "./cli.ts";
 import { startMcp } from "./mcp.ts";
 

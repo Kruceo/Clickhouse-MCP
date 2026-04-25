@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 
-const CONFIG_DIR = path.join(os.homedir(), ".clickhouse-mcp");
+const CONFIG_DIR = path.join(os.homedir(), ".clickhouse-mcp-vault");
 const KEY_PATH = path.join(CONFIG_DIR, ".key");
 const CONFIG_PATH = path.join(CONFIG_DIR, "config.enc");
 
