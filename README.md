@@ -18,7 +18,7 @@ It will return a UUID. Remember this.
   "$schema": "https://opencode.ai/config.json",
   "disabled_providers": [],
   "mcp": {
-    "clickhouse-atplus": {
+    "clickhouse": {
       "type": "local",
       "command": ["bunx", "clickhouse-mcp-vault"],
       "enabled": true,
